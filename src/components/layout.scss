@@ -224,6 +224,15 @@ pre[class*="language-"] > code[class*="language-"] {
   color: rgb(74, 74, 74)
 }
 
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(74, 74, 74)
+}
+
 .body {
   display: flex;
   flex-direction: column;
