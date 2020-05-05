@@ -30,14 +30,7 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
       />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          margin: "0 auto",
-          maxWidth: "960px",
-        }}
-      >
+      <div className="body">
         <main>{children}</main>
         {/*<footer*/}
         {/*  style={{*/}
