@@ -93,5 +93,12 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-5317622-2",
+      },
+    },
   ],
 }
