@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           display: "flex",
           flexDirection: "column",
           margin: "0 auto",
-          width: "960px",
+          maxWidth: "960px",
         }}
       >
         <main>{children}</main>

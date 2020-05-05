@@ -9,13 +9,10 @@ export default function Post({ data }) {
   return (
     <Layout>
       <SEO title={`${frontmatter.title}`} />
-      <div className="blog-post">
+      <div>
         <h2>{frontmatter.title}</h2>
         <h4>{frontmatter.date}</h4>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
