@@ -8,27 +8,22 @@ const IndexPage = ({ data }) => {
     allMarkdownRemark: { edges },
   } = data
 
-  const BlogPostList = edges
-    .map(post => {
-      const {
-        node: {
-          frontmatter: { date, title, path },
-        },
-      } = post
-      return (
-        <>
-          <Link to={`/${path}`} className="links">
-            <li
-              key={title}
-              style={{ listStyleType: "none", marginBottom: "0" }}
-            >
-              {date} - {title}
-            </li>
-          </Link>
-        </>
-      )
-    })
-    .reverse()
+  const BlogPostList = edges.map(post => {
+    const {
+      node: {
+        frontmatter: { date, title, path },
+      },
+    } = post
+    return (
+      <>
+        <Link to={`/${path}`} className="links">
+          <li key={title} style={{ listStyleType: "none", marginBottom: "0" }}>
+            {date} - {title}
+          </li>
+        </Link>
+      </>
+    )
+  })
 
   return (
     <Layout>
