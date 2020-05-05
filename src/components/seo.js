@@ -60,6 +60,14 @@ function SEO({ description, lang, meta, title }) {
       name: `twitter:description`,
       content: metaDescription,
     },
+    {
+      name: `og:image`,
+      content: `https://www.joshenglish.com/blog/icons/icon-144x144.png`,
+    },
+    {
+      name: `twitter:image`,
+      content: `https://www.joshenglish.com/blog/icons/icon-144x144.png`,
+    },
   ].reduce((accum, item) => {
     if ("property" in item) {
       const findItem = meta.find(tag => tag.property === item.property)
