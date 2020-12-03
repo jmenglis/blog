@@ -19,9 +19,10 @@ const IndexPage = ({ data }) => {
           frontmatter: { date, title, path },
         },
       } = post
+      console.log(post)
       return (
         <>
-          <Link to={`/${path}`} className="links">
+          <Link to={`${path}`} className="links">
             <li
               key={title}
               style={{ listStyleType: "none", marginBottom: "0" }}
